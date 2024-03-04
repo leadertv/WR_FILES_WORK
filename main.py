@@ -31,7 +31,6 @@ print("\n________\nВыводим рецепты из файла recipes.txt к�
 cook_book = parse_cook_book('recipes.txt')
 
 
-
 # Выводим результат
 for dish, ingredients in cook_book.items():
     print(f"{dish}:")
@@ -77,12 +76,11 @@ def get_item_list_by_dishes(dishes, person_count, cook_book):
 # }
 
 # Применяем функцию
-item_list = get_item_list_by_dishes(['Запеченный картофель', 'Омлет', 'Утка по-пекински'], 50, cook_book)
+item_list = get_item_list_by_dishes(['Запеченный картофель', 'Омлет', 'Утка по-пекински'], 2, cook_book)
 
 print("\n________\nВывод суммированных ингредиентов от количества персон:\n")
 # Выводим полученный результат
 for ingredient, quantity in item_list.items():
-    # print(f"{ingredient}: {quantity}")
     print(f"{ingredient}: {quantity},")
 
 print("\n________\nВывод в удобном формате:\n")
