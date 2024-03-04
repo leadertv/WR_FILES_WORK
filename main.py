@@ -76,7 +76,7 @@ def get_item_list_by_dishes(dishes, person_count, cook_book):
 # }
 
 # Применяем функцию
-item_list = get_item_list_by_dishes(['Запеченный картофель', 'Омлет', 'Утка по-пекински'], 2, cook_book)
+item_list = get_item_list_by_dishes(['Запеченный картофель', 'Секрет Шеф-Повара'], 2, cook_book)
 
 print("\n________\nВывод суммированных ингредиентов от количества персон:\n")
 # Выводим полученный результат
